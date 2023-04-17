@@ -17,7 +17,7 @@ from nltk.stem import WordNetLemmatizer
 
 
 with open('rf_clf.pkl', 'rb') as f:
-    model = pickle.load(f)
+    model1 = pickle.load(f)
 def extract_skills(resume_text):
 
     nlp_text = nlp(resume_text)
