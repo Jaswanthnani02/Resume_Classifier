@@ -11,6 +11,7 @@ nltk.download('stopwords')
 from nltk.corpus import stopwords
 nltk.download('wordnet')
 from nltk.stem import WordNetLemmatizer
+from sklearn.ensemble import RandomForestClassifier
 
 
 
