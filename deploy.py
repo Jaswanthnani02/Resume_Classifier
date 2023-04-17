@@ -2,10 +2,10 @@ import pandas as pd
 import numpy as np
 import streamlit as st
 import pickle
+import joblib
 
 
-model1 = pickle.load(open('rf_clf.pkl'))
-
+model1 = joblib.load('rf_clf.pkl')
 
 def extract_skills(resume_text):
 
