@@ -23,13 +23,9 @@ def web_app():
     # Do something with the uploaded file
         st.write("You uploaded:", uploaded_file.name)
     
+    
 
 
-    # INCOME = st.number_input("INCOME",1500,120000)
-    # AGE = st.number_input("AGE",19,80)
-    # Month_Customer = st.number_input("Month_Customer",12,50)
-    # TotalSpendings = st.number_input("TotalSpendings",5,3000)
-    # Children = st.number_input("Children",0,3)
     
     if st.button("Press here to make Prediction"):
         
@@ -40,7 +36,7 @@ def web_app():
             result = "PeopleSoft Resumes"
         elif result == 2: 
             result = "SQL Developer Lightning Insight Resumes"
-        else : 
+        else :
             result = "Workday Resumes"
         
         st.text_area(label='Category belongs to:- ',value=result , height= 100)
