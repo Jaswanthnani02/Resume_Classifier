@@ -11,11 +11,12 @@ nltk.download('stopwords')
 from nltk.corpus import stopwords
 nltk.download('wordnet')
 from nltk.stem import WordNetLemmatizer
-from sklearn.ensemble import RandomForestClassifier
 
 
-model1 = RandomForestClassifier()
-model1.load('rf_clf.pkl')
+
+
+model = joblib.load('rf_clf.pkl')
+model1=pickle.load(model)
 
 def extract_skills(resume_text):
 
@@ -101,7 +102,6 @@ def preprocess(sentence):
 # Function to extract experience details
 def expDetails(Text):
     global sent
-   
     Text = Text.split()
    
     for i in range(len(Text)-2):
