@@ -9,6 +9,7 @@ import nltk
 from nltk.tokenize import RegexpTokenizer
 nltk.download('stopwords')
 from nltk.corpus import stopwords
+nltk.download('wordnet')
 from nltk.stem import WordNetLemmatizer
 
 
