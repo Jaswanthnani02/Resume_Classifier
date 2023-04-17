@@ -138,7 +138,7 @@ def main():
             if doc_file is not None:
                 filename.append(doc_file.name)
                 cleaned=preprocess(display(doc_file))
-                prediction = model1.predict(model1.transform([cleaned]))[0]
+                prediction = model1.predict(model1.transform([cleaned]))
                 predicted.append(target.get(prediction))
                 extText = getText(doc_file)
                 exp = expDetails(extText)
