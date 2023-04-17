@@ -7,6 +7,7 @@ import docx2txt
 import os,re
 import nltk
 from nltk.tokenize import RegexpTokenizer
+from nltk.corpus import stopwords
 
 
 model1 = joblib.load('rf_clf.pkl')
