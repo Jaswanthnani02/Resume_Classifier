@@ -5,7 +5,8 @@ import pickle
 import joblib
 import docx2txt
 import os,re
-import nltk 
+import nltk
+from nltk.tokenize import RegexpTokenizer
 
 
 model1 = joblib.load('rf_clf.pkl')
