@@ -11,4 +11,3 @@ docx2txt
 textract
 python-docx
 nltk
-os
