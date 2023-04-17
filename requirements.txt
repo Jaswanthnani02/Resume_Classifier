@@ -1,0 +1,13 @@
+numpy
+pandas
+seaborn
+plotly
+matplotlib
+joblib
+streamlit
+scikit-learn
+python-doc
+docx2txt
+textract
+python-docx
+nltk
