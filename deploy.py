@@ -14,9 +14,8 @@ from nltk.stem import WordNetLemmatizer
 from sklearn.ensemble import RandomForestClassifier
 
 
-
-model = joblib.load('rf_clf.pkl')
-model1=pickle.load(model)
+model1 = RandomForestClassifier()
+model1.load(' rf_clf.pkl')
 
 def extract_skills(resume_text):
 
