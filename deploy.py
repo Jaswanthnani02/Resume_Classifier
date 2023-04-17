@@ -9,6 +9,8 @@ import nltk
 from nltk.tokenize import RegexpTokenizer
 nltk.download('stopwords')
 from nltk.corpus import stopwords
+from nltk.stem import WordNetLemmatizer
+
 
 
 model1 = joblib.load('rf_clf.pkl')
