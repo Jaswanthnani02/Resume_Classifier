@@ -15,7 +15,7 @@ from sklearn.ensemble import RandomForestClassifier
 
 
 model1 = RandomForestClassifier()
-model1.load(' rf_clf.pkl')
+model1.load('rf_clf.pkl')
 
 def extract_skills(resume_text):
 
