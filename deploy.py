@@ -4,6 +4,8 @@ import streamlit as st
 import pickle
 import joblib
 import docx2txt
+import os,re
+import nltk 
 
 
 model1 = joblib.load('rf_clf.pkl')
